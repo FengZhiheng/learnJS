@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+        margin : 0;
+        padding : 0;
+        }
+
+        #outer{
+            width : 500px;
+            margin : 50px auto;
+            padding: 10px;
+            background: beige;
+            text-align: center;
+
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var imgArray = ["img/Hill512.png","img/House256.png","img/Lena512.png","img/Man512.png","img/peppers256.png",]
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var img = document.getElementById("img")
+            var index= 0;
+            btn1.onclick = function(){
+                index = Math.abs(index - 1);
+                img.src = imgArray[index%imgArray.length];
+            }
+
+            btn2.onclick = function(){
+                index = index + 1;
+                img.src = imgArray[index%imgArray.length];
+            }
+
+            for(var i = 0; i < imgArray.length; i++){
+                console.log(i)
+            }
+
+            console.log("Hello Js");
+            console.log("Window Finished!");
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="outer">
+        <img id = "img" src="img/Hill512.png" alt="Hill">
+        <button id = "btn1">上一张</button>
+        <button id = "btn2">下一张</button>
+    </div>
+
+
+
+</body>
+</html>

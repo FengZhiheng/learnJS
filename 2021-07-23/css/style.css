@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to bottom right,rgb(114,135,254),rgb(130,88,186));
+}
+
+body .login-container{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20%;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px 0 rgb(59, 45, 159);
+    background-color: rgb(95, 76, 194);
+}
+
+body .login-container .left-container{
+    display: inline-block;
+    width: 330px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 60px;
+    background-image: linear-gradient(to bottom right,rgb(118, 76, 163),rgb(92, 103, 211));
+}
+
+
+body .login-container .left-container .title{
+    color: #fff;
+    font-size: 18px;
+}
+
+body .login-container .left-container .title span{
+    border-bottom: 3px solid rgb(237,221,22);
+}
+
+body .login-container .left-container .input-container{
+    padding: 20px 0;
+}
+
+body .login-container .left-container .input-container input{
+    border: 0px;
+    background: none;
+    outline: 0;
+    color: #fff;
+    margin: 8px 0;
+}
+
+
+body .login-container .right-container{
+    width: 145px;
+    display: inline-block;
+}
+
+/*rgb(114,135,254)    rgb(130,88,186)    rgb(59, 45, 159)*/
+/*rgb(95, 76, 194)    rgb(118, 76, 163)    rgb(92, 103, 211)*/
+/*rgb(199, 191, 219)    rgb(237,221,22)*/
